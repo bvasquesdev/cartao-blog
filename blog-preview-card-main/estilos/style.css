@@ -1,0 +1,120 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --Gray500: hsl(0, 0%, 42%);
+    --Gray950: hsl(0, 0%, 7%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Figtree", sans-serif;
+
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+div.conteudo {
+    width: 100%;
+    height: 100%;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.card {
+    border-right: 10px solid black;
+    border-bottom: 10px solid black;
+    border-radius: 16px;
+    max-width: 350px;
+
+    background: hsl(0, 0%, 100%);
+}
+
+div.card img{
+    width: 310px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 5px 8px;
+    background-color: var(--yellow);
+    font-weight: 500;
+    border: none;
+    border-radius: 4px;
+    margin-left: 15px;
+}
+
+p.data {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-left: 15px;
+    color: var(--Gray950);
+    font-weight: 850;
+}
+
+p.texto {
+    margin-top: 20px;
+    margin-left: 15px;
+    color: var(--Gray500);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+div.nome {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+div.nome img {
+    width: 36px;
+
+}
+
+div.nome p {
+    font-size: 16px;
+    color: var(--Gray950);
+    font-weight: 850;
+}
+
+div.attribution {
+    background-color: var(--yellow);
+    color: black;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+div.attribution a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.attribution a:hover {
+    text-decoration: underline;
+    color: var(--Gray950);
+}
